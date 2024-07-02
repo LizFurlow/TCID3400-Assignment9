@@ -1,0 +1,114 @@
+/* Global Styles */
+body { 
+    background-color: rgb(168, 195, 164); /* Light green background */
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    color: rgb(15, 61, 15); /* Dark green text */
+    max-width: 800px; /* Adjust max-width as needed for responsiveness */
+    margin: 0 auto; /* Center the content horizontally */
+    transition: background-color 0.3s ease; /* Smooth transition for theme change */
+}
+
+/* Headings */
+h1, h2 { 
+    font-family: 'Times New Roman', serif;
+    color: rgb(15, 61, 15); /* Dark green text */
+    text-align: center; /* Center headings */
+}
+
+/* Paragraphs and Lists */
+p, ol, ul { 
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* Section Containers */
+#Bio, #Hobbies, #Favorites, #Pictures {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgb(255, 255, 240); /* Off-white background for each section */
+    border: 1px solid rgb(222, 222, 222); /* Light grey border */
+}
+
+/* Images */
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Evenly space images */
+    flex-wrap: wrap; /* Allow images to wrap to new line on smaller screens */
+}
+
+.image-container img {
+    max-width: 30%; /* Adjust image size based on container width */
+    margin-bottom: 20px; /* Add space between images */
+}
+
+/* Style for dark theme */
+.darktheme {
+    background-color: rgb(7, 22, 7); /* background */
+    color: rgb(210, 210, 210); /* text */
+}
+
+.darktheme h1, .darktheme h2 {
+    color: rgb(210, 210, 210); /* headers */
+}
+
+.darktheme #Bio, .darktheme #Hobbies, .darktheme #Favorites, .darktheme #Pictures {
+    background-color: rgb(34, 68, 34); /* sections */
+    border: 1px solid rgb(34, 68, 34); /* section borders */
+}
+
+.darktheme .profile-card {
+    background-color: rgb(34, 68, 34); /* Change background color in dark theme */
+    color: rgb(210, 210, 210); /* Change text color in dark theme */
+    border: rgb(34, 68, 34);
+}
+
+/* Navigation menue styles */
+
+nav {
+    background-color: rgb(34, 68, 34); /* background */
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /*aligns menue items horizontally */
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(163, 205, 163); /* change color on hover */
+}
+
+/* Profile Card Style */
+.profile-card {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: rgb(255, 255, 240);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+}
+
+.profile-card .profile-picture {
+    display: block;
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin: 0 auto;
+}

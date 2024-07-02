@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bio</title>
+    <link rel="stylesheet" href="Styles2.css">
+</head>
+<body>
+<!-- Nav bar -->
+<nav>
+    <ul>
+        <li><a href="#Bio">About Me</a></li>
+        <li><a href="#Hobbies">Hobbies</a></li>
+        <li><a href="#Favorites">Favorites</a></li>
+        <li><a href="#Pictures">Pictures</a></li>
+    </ul>
+</nav>
+
+        <!-- JavaScript theme Button -->
+        <button id="themeButton">Change Theme Color</button>
+
+    <script>
+       var themeButton = document.getElementById('themeButton');
+        var body = document.body;
+
+        // Function to update theme button text based on current theme
+        function updateThemeButtonText() {
+            if (body.classList.contains('darktheme')) {
+                themeButton.textContent = 'Current Theme: Dark';
+            } else {
+                themeButton.textContent = 'Current Theme: Light';
+            }
+        }
+
+        // Initial call to set button text based on initial theme state
+        updateThemeButtonText();
+
+        // Event listener to toggle darktheme class on body and update button text
+        themeButton.addEventListener('click', function() {
+            body.classList.toggle('darktheme');
+            updateThemeButtonText(); // Update button text after theme toggle
+        });
+    </script>
+<!--Profile Card-->
+<div class="profile-card">
+    <img src="" alt="profile picture" class="profile-picture">
+    <h2>Liz</h2>
+    <p>Interactive Design Student</p>
+    <p>Interests: art, plants, travel</p>
+    <p>Contact Me: 123-123-1234</p>
+</div>
+
+        <section id="Bio">
+            <h2>About Me</h2>
+            <p>I am currently a Junior in college studying Interactive Design. 
+            I am passionate about user-centered web and mobile design. I live in Georgia with my partner and my dog, Willow!</p>
+        </section>
+
+        <section id="Hobbies">
+            <h2>Hobbies</h2>
+            <ol>
+                <li>Plant care</li>
+                <li>Painting and drawing</li>
+                <li>Volunteering with a pet shelter</li>
+                <li>Keeping Fish</li>
+                <li>Travelling</li>
+            </ol>
+        </section>
+
+        <section id="Favorites">
+            <h2>My Favorite...</h2>
+            <ul>
+                <li>Movie: The Lion King</li>
+                <li>Video Game: The Sims 4</li>
+                <li>Place: San Diego, CA</li>
+                <li>Music: Alt rock, metal, lo-fi</li>
+                <li>Color: Green</li>
+            </ul>
+        </section>
+
+        <section id="Pictures">
+            <h2>Pictures!</h2>
+            <div class="image-container">
+                <img src="willow adoption photo.jpg" alt="Willow's adoption photo"> 
+                <img src="willow at the park.jpg" alt="Willow at the park"> 
+                <img src="willow.JPG" alt="Willow">
+            </div>
+        </section>
+
+</body>
+</html>
+m 
